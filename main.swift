@@ -12,12 +12,19 @@
 let aStack: MrCoxallStack = MrCoxallStack()
 let addedNewNumber: String = "Added new number"
 let newStack: String = "New Stack: "
-let popNumber: String = "Popped the top number"
+let popNumber: String = "Popped "
 
 let fourtyTwo: Int = 42
 let ninetyOne: Int = 91
+let fourteen: Int = 14
 
 print("Initial stack")
+aStack.showStack()
+
+// Adding 14
+print(addedNewNumber)
+aStack.push(pushNumber: fourteen)
+print(newStack)
 aStack.showStack()
 
 // Adding 42
@@ -32,7 +39,7 @@ aStack.push(pushNumber: ninetyOne)
 print(newStack)
 aStack.showStack()
 
-// Removing the top number (currently 42)
-print(popNumber)
-aStack.pop()
+// Removing the top number
+let poppedNumber: Int = aStack.pop()
+print(popNumber, poppedNumber)
 aStack.showStack()

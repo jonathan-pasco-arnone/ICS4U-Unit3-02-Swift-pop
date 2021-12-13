@@ -13,7 +13,9 @@ class MrCoxallStack {
     }
 
     // removes the top value of the stack
-    func pop() {
+    func pop() -> Int {
+        let poppedNumber: Int = stackAsArray[0]
         stackAsArray.remove(at: 0)
+        return poppedNumber
     }
 }
